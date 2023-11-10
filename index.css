@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+.header{
+    padding: 6px;
+    height: 60px;
+    width: 100%;
+    display:flex;
+    align-items: center; /*중심축이 세로*/
+    justify-content: space-between; /*교차축 가로+요소들 사이에 동일한 간격으로*/
+}
+
+.header a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #202124;
+    font-size: 14px;
+    cursor: pointer;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+
+.header .rightNav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu:hover{
+    background-color: #e4e3e3;
+}
+
+.header .rightNav svg {
+    width: 24px;
+    height: 24px;
+}
+
+.loginButton{
+    background: #1a73e8;
+    user-select: none; /*텍스트 영역이 클릭 및 드래그로 선택되지 않음*/
+    outline: none;
+    width: 96px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 8px;
+}
+.loginButton:hover{
+    background: #1b66c9;
+    webkit-box-shadow: 0 1px 3px 1px rgba(66,64,67,.15), 0 1px 2px 0 rgba(60,64,67,.3);
+    box-shadow: 0 1px 3px 1px rgba(66,64,67,.15), 0 1px 2px 0 rgba(60,64,67,.3);
+}
+
+/* main */
+.logoWrapper{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controllSection{
+    width: 100%;
+    height: 160px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.buttonWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.inputWrapper{
+    width: 582px;
+    height: 46px;
+    border-radius: 100px;
+    border: 1px solid #dddddd;
+    position: relative;
+    padding: 0px 8px 0px 14px;
+}
+.inputWrapper:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.inputIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+.inputWrapper input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 37px;
+    padding-right: 100px;
+    border-radius: inherit;
+    border: 0;
+}
+
+.buttonWrapper{
+    width: 584px;
+    height: 88px;
+    padding: 18px 0 0;
+}
+
+.buttonWrapper button{
+    padding: 0px 16px;
+    margin: 11px 4px;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 142px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    cursor: pointer;
+}
+.buttonWrapper button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f2;
+    margin-top: auto;
+
+}
+
+.topFooter{
+    width: 100%;
+    height: 50px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #202124;
+} 
+.bottomFooter{
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomFooter nav a{
+    color: #202124;
+    padding: 15px;
+    font-size: 14px;
+}
+.bottomFooter nav a:hover{
+    text-decoration: underline;
+}
+
+
